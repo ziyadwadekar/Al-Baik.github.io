@@ -1,0 +1,610 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+body{
+    font-family: 'Inconsolata', monospace;
+    background-color: whitesmoke;
+}
+
+.navbar {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+    z-index: 9999;
+}
+
+.navbar__brand{
+    width: 100px;
+}
+
+.brand__logo{
+    width: 100%;
+}
+
+.navbar__nav__items{
+    display: flex;
+}
+
+.button__primary {
+    background: linear-gradient(
+        to right,
+        yellow 0%,
+        green 51%,
+        red 100%
+    );
+    margin: 10px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    transition: 0.5s;
+    font-weight: 600;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px yellow;
+    border-radius: 4px;
+    display: block;
+    cursor: pointer;
+}
+
+.hero__bg__img___container{
+    margin: 0;
+    position: sticky;
+}
+
+.hero__bg__img{
+   width: 100%;
+   height: 70vh;
+}
+
+.button__primary:hover {
+    background: linear-gradient(
+        to left,
+        yellow 0%,
+        green 51%,
+        red 100%
+    );
+}
+
+.hero__card{
+    position: absolute;
+    top: 13%;
+    left: 13px;
+    right: 13px;
+}
+
+.hero__title{
+     color: white;
+     font-size: 3.5rem;
+}
+
+.hero__sub{
+    color: white;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.hero__btn,
+.hero__btn1{
+    margin-top: 1rem;
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    border: 2px solid white;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hero__btn:hover{
+    color: black;
+    background-color: white;
+}
+
+.hero__btn1:hover{
+    color: black;
+    background-color: white;
+}
+
+.hero__low{
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.mid__title{
+    color: red;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 0.7rem;
+    margin-left: 0.8rem;
+}
+
+.mid__dis{
+    font-size: 1rem;
+    color: rgb(37, 35, 35);
+    margin: 0.6rem;
+    margin-left: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mid__dis1{
+    font-size: 1rem;
+    color: rgb(37, 35, 35);
+    margin: 0.6rem;
+    margin-left: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.read{
+    color: red;
+}
+
+.hero__location{
+    text-align: center;
+}
+
+.locaton__symbol{
+    color: red;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+}
+
+.location__dis{
+    color: red;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+
+.location__dis1{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    color: rgb(37, 35, 35);
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+
+.location__searchbox{
+    margin-top: 0.5rem;
+}
+
+.searchbox{
+   font-size: 1rem; 
+   padding: 0.3rem;
+   border: 2px solid red;  
+}
+
+.slide__img__container{
+    margin-top: 1.5rem;
+}
+
+.slide__img__title{
+    margin-left: 0.2rem;
+    margin-right: 1.2rem;
+    color: red;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.slide__img{
+    width: 100%;
+    height: 250px;
+    margin-top: 0.5rem;
+    background-image: url(./accets/slide__img1.jpg);
+    animation: slider 12s infinite linear;
+}
+
+@keyframes slider{
+    0%{ background-image: url(./accets/slide__img1.jpg);}
+    25%{ background-image: url(./accets/slide__img2.jpg);}
+    50%{ background-image: url(./accets/slide__img3.jpg); }
+    50%{ background-image: url(./accets/slide__img4.jpg); }
+}
+
+.new__menu__pizza{
+    display: block;
+    position: relative;
+    margin-top: 1.3rem;
+    padding: 0;
+}
+
+.new__menu__dis{
+    position: absolute;
+    top: 9%;
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+
+.menu__dis1{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.menu__dis2{
+    color: wheat;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+.menu__bg{
+     width: 376.5px;
+     height: 58vh;
+}
+
+.new__open__title{
+    margin-top: 2rem;
+}
+
+.new__title{
+    font-size: 2.3rem;
+    color: red;
+    font-weight: 600;
+}
+
+.new__title1{
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 450;
+    margin-top: 1rem;
+}
+
+.new__img__container{
+    position: relative;
+    margin-top: 1rem;
+}
+
+.new__img1{
+    width: 376.5px;
+     height: 58vh;
+}
+
+.new__img2{
+    width: 376.5px;
+     height: 58vh;
+}
+
+.new__img3{
+    width: 376.5px;
+     height: 58vh;
+}
+
+.hero__customer__review{
+    margin-top: 1rem;
+    margin-left: 0.7rem;
+    padding: 0.5rem;
+}
+
+.customer__review1{
+    background-color: rgb(219, 219, 219);
+    padding: 0.4rem;
+    margin-top: 1rem;
+}
+
+.review__title{
+    color: rgb(255, 0, 0);
+    font-size: 2.2rem;
+    font-weight: 550;
+}
+
+.review1__head{
+    margin-top: 1rem;
+    color: rgb(184, 8, 8);
+    font-size: 0.9rem;
+}
+
+.star1{
+    margin-top: 1.5rem;
+    color: goldenrod;
+    
+}
+
+.review__content1{
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+.review__name1{
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.more__revew{
+    color: red;
+    font-size: 1rem;
+    text-align: right;
+    margin-top: 1rem;
+}
+
+.contact__us{
+    background-color: rgb(184, 0, 0);
+    margin-top: 1rem;
+}
+
+.contact__head{
+    color: white;
+    margin-left: 0.5rem;
+    font-size: 2.5rem;
+}
+
+.contact__add{
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+}
+.contact__no1{
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.contact__no2{
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 0.6rem;
+    margin-left: 0.5rem;
+}
+
+.contact__mail{
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+.int__head{
+    color: white;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    margin-left: 0.5rem;
+}
+
+.int__add{
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.int__no{
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 0.6rem;
+    margin-left: 0.5rem; 
+}
+
+.social{
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 0.6rem;
+    margin-left: 0.5rem; 
+    letter-spacing: 12px;
+    margin-bottom: 0.3rem;
+}
+
+.foot{
+     background-color: black;
+     color: white;
+}
+
+.foot__txt{
+    margin-top: 1rem;
+    margin-left: 0.6rem;
+}
+
+.foot__btn{
+    margin-bottom: 0.5rem;
+    margin-left: 0.8rem;
+}
+
+
+@media (min-width: 1200px) {
+    .navbar {
+        padding: 0 3rem;
+    }
+    .brand__logo{
+        width: 100px;
+        height: 70px;
+        height: 4.3rem;
+    }
+    .button__primary {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+    .hero__bg__img{
+        width: 100%;
+        height: 95vh;
+    }
+    .hero__card{
+        top: 28%;
+        left: 11%;
+        right: 25%;
+    }
+    .hero__title{
+        font-size: 7rem;
+        font-weight: 500;
+   }
+   .hero__sub{
+    font-size: 5rem;
+   }
+   .hero__btn,
+   .hero__btn1{
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    margin-top: 1.8rem;
+   }
+   .hero__low{
+       margin-top: 0.9rem;
+       font-size: 2rem;
+       margin-top: 1.1rem;
+   }
+   .mid__img{
+       display: none;
+   }
+   .mid__title{
+       font-size: 5rem;
+       margin-left: 2rem;
+    }
+    .mid__dis{
+        font-size: 2rem;
+        margin: 0.6rem;
+        margin-left: 2rem;
+    }  
+    .mid__dis1{
+        font-size: 2rem;
+        margin: 0.6rem;
+        margin-left: 2rem;
+    }   
+    .read{
+        cursor: pointer;
+    } 
+    .locaton__symbol{
+        font-size: 5rem;
+    }
+    .location__dis{
+        font-size: 4rem;
+    }
+    .location__dis1{
+        font-size: 2rem;
+    }
+    .searchbox{
+        font-size: 1.5rem; 
+        padding: 0.5rem;  
+     }
+     .slide__img__title{
+         margin-top: 1rem;
+         margin-left: 1.8rem;
+         font-size: 4rem;
+     }
+     .slide__img{
+         background-repeat: no-repeat;
+         margin-top: 2rem;
+         /* margin-left: 15rem; */
+         display: block;
+         background-position: center;
+         height: 60vh;
+        
+     }
+     .new__menu__pizza{
+         margin-top: 2rem;
+         margin-left: 5rem;
+         margin-right: 5rem;
+     }
+     .menu__bg{
+         width: 100%;
+         height: 85vh;
+     }
+     .menu__dis1{
+         position: relative;
+         font-size: 8.5rem;
+         color: white;
+         text-align: center;
+     }
+     .menu__dis2{
+         position: relative;
+         margin-top: 2.5rem;
+         font-size: 2rem;
+         color: white;
+         text-align: center;
+     }
+     .new__title{
+         font-size: 4.5rem;
+         margin-left: 5rem;
+         font-weight: 700;
+     }
+     .new__title1{
+         margin-left: 5rem;
+         font-size: 2.5rem;
+     }
+     .new__img__container{
+         display: flex;
+         justify-content: center;
+         gap: 2rem;
+     }
+     .review__title{
+         margin-top: 2.5rem;
+         font-size: 4rem;
+     }
+     .customer__review{
+         display: flex;
+         gap: 0.6rem;
+         width: 100rem;
+         margin-left: 10rem;
+     }
+     .customer__review1{
+         width: 100rem;
+     }
+     .review1__head{
+         font-size: 1.5rem;
+     }
+     .star1{
+         font-size: 0.9rem;
+     }
+     .review__content1{
+         font-size: 1.75rem;
+     }
+     .review__name1{
+         margin-top: 1rem;
+         font-size: 2rem;
+     }
+     .more__revew{
+         font-size: 1.78rem;
+         margin-right: 2rem;
+         margin-top: 2rem;
+         cursor: pointer;
+     }
+     .contact__us{
+         display: flex;
+         justify-content: space-between;
+         padding: 1rem;
+     }
+     .contact{
+         margin-top: 1.5rem;
+     }
+     .contact__head,
+     .int__head{
+          font-size: 3.55rem;
+     }
+     .contact__add,
+     .int__add{
+         font-size: 1.7rem;
+     }
+     .contact__no1,
+     .contact__no2,
+     .int__no{
+         font-size: 1.5rem;
+         margin-top: 0.7rem;
+     }
+     .contact__mail{
+         font-size: 1.5rem;
+         margin-top: 00.7rem;
+     }
+     .social{
+         font-size: 1.7rem;
+         margin-top: 1.5rem;
+     }
+     .foot{
+         display: flex;
+         padding: 1rem;
+     }
+     .foot__txt,
+     .foot__btn{
+         margin-top: 0.8rem;
+         font-size: 1.2rem;
+     }
+     .foot__btn{
+         margin-left: 18rem;
+         cursor: pointer;
+     }
+     
+}
